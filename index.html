@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎄 Обратный отсчёт до Нового Года 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Снежинки будут добавляться через JS -->
+    <div id="snowflakes-container"></div>
+    
+    <!-- Частицы при клике -->
+    <div id="particles-container"></div>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <h1 class="title">
+            <span class="emoji">🎄</span>
+            До Нового Года
+            <span class="emoji">🎄</span>
+        </h1>
+        
+        <div class="countdown">
+            <div class="time-block">
+                <div class="time-value" id="days">00</div>
+                <div class="time-label">дней</div>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-block">
+                <div class="time-value" id="hours">00</div>
+                <div class="time-label">часов</div>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-block">
+                <div class="time-value" id="minutes">00</div>
+                <div class="time-label">минут</div>
+            </div>
+            <div class="separator">:</div>
+            <div class="time-block">
+                <div class="time-value" id="seconds">00</div>
+                <div class="time-label">секунд</div>
+            </div>
+        </div>
+
+        <p class="subtitle">2026 уже близко! ✨</p>
+
+        <!-- Интерактивные элементы -->
+        <div class="interactive-section">
+            <button class="magic-btn" id="confettiBtn">
+                🎉 Запустить конфетти!
+            </button>
+            <button class="magic-btn snowflake-btn" id="snowBtn">
+                ❄️ Больше снега!
+            </button>
+        </div>
+
+        <!-- Новогодние пожелания -->
+        <div class="wishes-container">
+            <h2>🌟 Новогоднее пожелание</h2>
+            <p class="wish" id="wish">Нажмите на кнопку, чтобы получить пожелание!</p>
+            <button class="wish-btn" id="wishBtn">✨ Получить пожелание</button>
+        </div>
+
+        <!-- Аудио контроль -->
+        <div class="audio-control">
+            <button class="audio-btn" id="audioBtn">
+                🔇 Включить музыку
+            </button>
+            <audio id="bgMusic" loop>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <p class="hint">💡 Кликайте по экрану для магии!</p>
+    </main>
+
+    <!-- Ёлочные украшения по углам -->
+    <div class="decoration top-left">🎅</div>
+    <div class="decoration top-right">⭐</div>
+    <div class="decoration bottom-left">🎁</div>
+    <div class="decoration bottom-right">🦌</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
